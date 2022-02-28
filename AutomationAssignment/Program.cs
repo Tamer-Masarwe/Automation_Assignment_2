@@ -7,7 +7,6 @@ namespace AutomationAssignment
     {
         static void Main()
         {
-
         }
     }
 }
