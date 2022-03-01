@@ -12,7 +12,6 @@ namespace AutomationAssignment.Cases
 {
     class APITests
     {
-        
         [Test, Category("Get API Tests")]
         public void GetAccountByID_APITest_ReturnTrue()
         {
@@ -26,15 +25,11 @@ namespace AutomationAssignment.Cases
                 request.ContentType = "application/JSON";
                 request.ContentLength = 0;
 
-                var response = (HttpWebResponse)request.GetResponse();
-
-                if (response.StatusCode != HttpStatusCode.OK)
+                if (((HttpWebResponse)request.GetResponse()).StatusCode != HttpStatusCode.OK)
                     Assert.Fail();               
             }
             Assert.Pass();
         }
-
-
 
         [Test, Category("GET API Tests")]
         public void GetCustomersByID_APITest_ReturnTrue()
@@ -49,9 +44,7 @@ namespace AutomationAssignment.Cases
                 request.ContentType = "application/JSON";
                 request.ContentLength = 0;
 
-                var response = (HttpWebResponse)request.GetResponse();
-
-                if (response.StatusCode != HttpStatusCode.OK)
+                if (((HttpWebResponse)request.GetResponse()).StatusCode != HttpStatusCode.OK)
                     Assert.Fail();
             }
             Assert.Pass();
