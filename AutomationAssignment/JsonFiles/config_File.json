@@ -1,5 +1,7 @@
 {
-    "ContactPageURL": "https://automationpanda.com/contact/"
+  "ContactPageURL": "https://automationpanda.com/contact/",
+  "AccountsTest_URL": "https://parabank.parasoft.com/parabank/services/bank/accounts/",
+  "CustomrtsTest_URL": "https://parabank.parasoft.com/parabank/services/bank/customers/"
 }
   
     
