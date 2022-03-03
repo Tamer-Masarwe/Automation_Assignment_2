@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace AutomationAssignment.Cases
 {
+    [TestFixture]
     class APITests
     {
         [Test, Category("Get API Tests")]
