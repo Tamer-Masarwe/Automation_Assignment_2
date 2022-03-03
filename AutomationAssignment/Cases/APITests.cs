@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace AutomationAssignment.Cases
 {
+    [TestFixture]
     class APITests
     {
         [Test, Category("Get API Tests")]
@@ -30,7 +31,6 @@ namespace AutomationAssignment.Cases
             }
             Assert.Pass();
         }
-
 
         [Test, Category("GET API Tests")]
         public void GetCustomersByID_APITest_ReturnTrue()
